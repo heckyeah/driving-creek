@@ -4,7 +4,7 @@
   left: 0;
   right: 0;
   padding: 15px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .navigation nav.navigation-menu ul.menu {
@@ -15,7 +15,28 @@
 
 .navigation nav.navigation-menu ul.menu li {
   display: inline-block;
-  padding-right: 30px;
+  padding-right: 45px;
+  padding-left: 26px;
+}
+
+.navigation nav.navigation-menu ul.menu li.menu-item {
+  border-left: 4px solid transparent;
+}
+
+.navigation nav.navigation-menu ul.menu li.menu-item-1:hover {
+  border-left: 4px solid red;
+}
+
+.navigation nav.navigation-menu ul.menu li.menu-item-2:hover {
+  border-left: 4px solid green;
+}
+
+.navigation nav.navigation-menu ul.menu li.menu-item-3:hover {
+  border-left: 4px solid orange;
+}
+
+.navigation nav.navigation-menu ul.menu li.menu-item-4:hover {
+  border-left: 4px solid darkgreen;
 }
 
 .navigation nav.navigation-menu ul.menu li .long-name {

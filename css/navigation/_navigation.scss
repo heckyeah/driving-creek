@@ -4,7 +4,7 @@
     left: 0;
     right: 0;
     padding: 15px;
-    background-color: rgba(0,0,0,0.5);
+    background-color: $nav-background-color;
     nav.navigation-menu {
         ul.menu {
             margin: 0;
@@ -12,7 +12,23 @@
             list-style-type: none;
             li {
                 display: inline-block;
-                padding-right: 30px;
+                padding-right: 45px;
+                padding-left: 26px;
+                &.menu-item {
+                    border-left: 4px solid transparent;
+                }
+                &.menu-item-1:hover {
+                    border-left: 4px solid $railway;
+                }
+                &.menu-item-2:hover {
+                    border-left: 4px solid $zipline;
+                }
+                &.menu-item-3:hover {
+                    border-left: 4px solid $pottery;
+                }
+                &.menu-item-4:hover {
+                    border-left: 4px solid $conservation;
+                }
                 .long-name {
                     display: block;
                     color: #fff;
