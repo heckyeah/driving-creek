@@ -20,5 +20,10 @@
 
 .navigation nav.navigation-menu ul.menu li .long-name {
   display: block;
+  color: #fff;
+}
+
+.navigation nav.navigation-menu ul.menu li a:link, .navigation nav.navigation-menu ul.menu li a:active, .navigation nav.navigation-menu ul.menu li a:visited {
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
