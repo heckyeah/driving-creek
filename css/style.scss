@@ -1,5 +1,10 @@
 @import "partials/_colours";
+@import "partials/_fonts";
+@import "partials/_mixins";
 
 @import "layout/_navigation";
 @import "layout/_banner";
 
+body {
+    font-family: $font;
+}

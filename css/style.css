@@ -3,50 +3,77 @@
   top: 0;
   left: 0;
   right: 0;
-  padding: 15px;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.4);
   z-index: 100;
+}
+
+.navigation .logo {
+  padding: 15px;
+}
+
+.navigation .logo img {
+  max-width: 170px;
+  height: auto;
 }
 
 .navigation nav.navigation-menu ul.menu {
   margin: 0;
   padding: 0;
-  list-style-type: none;
 }
 
 .navigation nav.navigation-menu ul.menu li {
   display: inline-block;
-  padding-right: 45px;
-  padding-left: 26px;
+  padding-right: 60px;
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  margin-right: 15px;
+  line-height: 1.2;
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-transition: background-color 0.25s;
+  transition: background-color 0.25s;
 }
 
-.navigation nav.navigation-menu ul.menu li.menu-item {
-  border-left: 4px solid transparent;
+.navigation nav.navigation-menu ul.menu li.menu-item-1 {
+  border-left: 5px solid #981E20;
 }
 
-.navigation nav.navigation-menu ul.menu li.menu-item-1:hover {
-  border-left: 4px solid red;
+.navigation nav.navigation-menu ul.menu li.menu-item-2 {
+  border-left: 5px solid #4B6F34;
 }
 
-.navigation nav.navigation-menu ul.menu li.menu-item-2:hover {
-  border-left: 4px solid green;
+.navigation nav.navigation-menu ul.menu li.menu-item-3 {
+  border-left: 5px solid #C15E28;
 }
 
-.navigation nav.navigation-menu ul.menu li.menu-item-3:hover {
-  border-left: 4px solid orange;
-}
-
-.navigation nav.navigation-menu ul.menu li.menu-item-4:hover {
-  border-left: 4px solid darkgreen;
+.navigation nav.navigation-menu ul.menu li.menu-item-4 {
+  border-left: 5px solid #0D301A;
 }
 
 .navigation nav.navigation-menu ul.menu li .long-name {
   display: block;
   color: #fff;
+  font-size: 1.15rem;
+  text-transform: uppercase;
 }
 
 .navigation nav.navigation-menu ul.menu li a:link, .navigation nav.navigation-menu ul.menu li a:active, .navigation nav.navigation-menu ul.menu li a:visited {
   color: #fff;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
+
+.navigation nav.navigation-menu ul.menu li a:hover {
+  text-decoration: none;
+}
+
+.navigation nav.navigation-menu ul.menu li:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: background-color 0.25s;
+  transition: background-color 0.25s;
+  cursor: pointer;
 }
 
 .banner .banner-item {
@@ -98,5 +125,9 @@
 
 .slick-slider .slick-next:hover {
   opacity: 0.7;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
 }
 /*# sourceMappingURL=style.css.map */
