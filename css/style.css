@@ -76,10 +76,15 @@
   cursor: pointer;
 }
 
+.banner {
+  background-color: #000;
+}
+
 .banner .banner-item {
+  position: relative;
   height: 700px;
   height: 100vh;
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom center;
   display: block !important;
@@ -89,6 +94,54 @@
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+.banner .banner-item .banner-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  color: #fff;
+  padding-left: 10%;
+  padding-bottom: 10%;
+}
+
+.banner .banner-item .banner-text h2 {
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.banner .banner-item .banner-text p {
+  line-height: 2;
+  font-size: 1.2rem;
+}
+
+.banner .banner-item .banner-text .coupon-code {
+  border: 2px solid #fff;
+  padding: 5px 10px;
+  margin-left: 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.banner .banner-item .banner-text .banner-button {
+  background-color: #FFCC04;
+  color: #000;
+  display: block;
+  width: 180px;
+  padding: 10px 15px;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 3px;
+}
+
+.banner .banner-item .banner-text .banner-button:hover {
+  background-color: #b79100;
+  text-decoration: none;
 }
 
 .slick-slider .slick-arrow {

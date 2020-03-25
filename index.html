@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
     <link rel="stylesheet" href="/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i,700,700i&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -49,9 +49,30 @@
     </div>
     <div class="banner">
         <div class="main-banner">
-            <div class="banner-item-1 banner-item" style="background-image: url(/img/banner-image.png);"></div>
-            <div class="banner-item-2 banner-item" style="background-image: url(/img/banner-image.png);"></div>
-            <div class="banner-item-3 banner-item" style="background-image: url(/img/banner-image.png);"></div>
+            <div class="banner-item-1 banner-item" style="background-image: url(/img/banner-image.png);">
+                <div class="banner-text">
+                    <h2>Book Yourself an adventure today</h2>
+                    <p>Today were offering a 30% discount to whoever uses the</br>
+                    discount code: <span class="coupon-code">JustJump</span></p>
+                    <a href="#" class="banner-button">Book Now</a>
+                </div>
+            </div>
+            <div class="banner-item-2 banner-item" style="background-image: url(/img/banner-image-2.png);">
+                <div class="banner-text">
+                    <h2>All aboard!!! </h2>
+                    <p>Looking for something cool to do in the Coromandel?</br>
+                    Why not bring the kid's for a 1 hour train ride up to our EyeFull tower.</p>
+                    <a href="#" class="banner-button">View Map</a>
+                </div>
+            </div>
+            <div class="banner-item-3 banner-item" style="background-image: url(/img/banner-image-3.png);">'
+                <div class="banner-text">
+                    <h2>What's a Kauri? Where can I find them?</h2>
+                    <p>Come over to Driving Creek and we can show you kauri tree's,</br>
+                    as well as a bunch of other native trees.</p>
+                    <a href="#" class="banner-button">Learn More</a>
+                </div>
+            </div>
         </div>
     </div>
     <div class="content">
@@ -65,7 +86,10 @@
 
     <script type="text/javascript">
         $(document).ready(function(){
-            $('.main-banner').slick();
+            $('.main-banner').slick({
+                fade: true,
+                speed: 1500,
+            });
         });
     </script>
 </body>
