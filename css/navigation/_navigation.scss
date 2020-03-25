@@ -1,0 +1,23 @@
+.navigation {
+    position: fixed;
+    top: 0;
+
+    left: 0;
+    right: 0;
+    padding: 15px;
+    background-color: rgba(0,0,0,0.5);
+    nav.navigation-menu {
+        ul.menu {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            li {
+                display: inline-block;
+                padding-right: 30px;
+                .long-name {
+                    display: block;
+                }
+            }
+        }
+    }
+}
