@@ -1,5 +1,6 @@
 @import "partials/_colours";
 @import "partials/_fonts";
+@import "partials/_styling";
 @import "partials/_mixins";
 
 @import "layout/_navigation";
@@ -9,3 +10,9 @@
 body {
     font-family: $font;
 }
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
