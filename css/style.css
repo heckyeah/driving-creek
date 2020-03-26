@@ -180,6 +180,69 @@
   opacity: 0.8;
 }
 
+footer.footer {
+  background-color: #111;
+  padding-top: 60px;
+}
+
+footer.footer a:link, footer.footer a:active, footer.footer a:visited {
+  color: #FFCC04;
+}
+
+footer.footer .footer-column .footer-get-in-touch {
+  padding-bottom: 15px;
+}
+
+footer.footer .footer-column .footer-hours .closed-times {
+  color: #fff;
+  font-size: 0.775rem;
+}
+
+footer.footer .footer-column img {
+  max-width: 175px;
+}
+
+footer.footer .footer-column h3 {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+footer.footer .footer-column p {
+  color: #fff;
+  font-size: 0.875rem;
+}
+
+footer.footer .footer-column .footer-number {
+  color: #fff;
+  font-size: 0.875rem;
+}
+
+footer.footer .footer-column .footer-number .phone-icon {
+  padding-right: 10px;
+}
+
+footer.footer .footer-column ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  line-height: 1.5;
+}
+
+footer.footer .footer-column ul li a:link, footer.footer .footer-column ul li a:active, footer.footer .footer-column ul li a:visited {
+  color: #FFCC04;
+  font-size: 0.875rem;
+}
+
+footer.footer .copyright {
+  color: #fff;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 15px;
+  font-size: 0.775rem;
+  font-style: italic;
+}
+
 body {
   font-family: "Source Sans Pro", sans-serif;
 }

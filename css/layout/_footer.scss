@@ -1,0 +1,65 @@
+footer.footer {
+    background-color: #111;
+    padding-top: 60px;
+    a {
+        &:link,
+        &:active,
+        &:visited {
+            color: $second-color;
+        }
+    }
+    .footer-column {
+        .footer-get-in-touch {
+            padding-bottom: 15px;
+        }
+        .footer-hours {
+            .closed-times {
+                color: #fff;
+                font-size: 0.775rem;
+            }
+        }
+        img {
+            max-width: 175px;
+        }
+        h3 {
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+        p {
+            color: #fff;
+            font-size: 0.875rem;
+        }
+        .footer-number {
+            color: #fff;
+            font-size: 0.875rem;
+            .phone-icon {
+                padding-right: 10px;
+            }
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            line-height: 1.5;
+            li {
+                a {
+                    &:link,
+                    &:active,
+                    &:visited {
+                        color: $second-color;
+                        font-size: 0.875rem;
+                    }
+                }
+            }
+        }
+    }
+    .copyright {
+        color: #fff;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 15px;
+        font-size: 0.775rem;
+        font-style: italic;
+    }
+}
