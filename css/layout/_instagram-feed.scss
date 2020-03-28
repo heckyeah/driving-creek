@@ -44,7 +44,7 @@
             .instagram-feed-description {
                 background-color: #fff;
                 padding: 15px;
-                @include borderRadius(0,0,3px,3px)
+                @include borderRadius(0,0,3px,3px);
                 p {
                     color: #aaa;
                     font-size: 0.775em;
