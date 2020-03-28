@@ -399,8 +399,6 @@
 }
 
 .slider-container .combo-slider {
-  padding-left: 15px;
-  padding-right: 15px;
   padding-top: 15px;
   padding-bottom: 15px;
 }
@@ -429,11 +427,11 @@
 }
 
 .slider-container .combo-slider .combo-prev {
-  left: 30px;
+  left: 15px;
 }
 
 .slider-container .combo-slider .combo-next {
-  right: 30px;
+  right: 15px;
 }
 
 .slider-container .combo-slider img {
@@ -456,15 +454,15 @@
 .slider-container .combo-slider .combo-item .combo-info .combo-image img {
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
-  border-bottom-right-radius: 0px;
-  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .slider-container .combo-slider .combo-item .combo-info .combo-description {
   padding: 15px;
   background-color: #fefefe;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
 }
@@ -492,6 +490,99 @@
 }
 
 .slider-container .combo-slider .combo-item .combo-info .combo-description .book-combo:hover {
+  background-color: #ffdc51;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.instagram-feed {
+  padding-top: 60px;
+  padding-bottom: 120px;
+  background-color: #4B6F34;
+  background: linear-gradient(75deg, #056a38 0%, #079247 100%);
+}
+
+.instagram-feed .instagram-title {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.instagram-feed .instagram-title h2 {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.instagram-feed .instagram_gallery {
+  padding-top: 0;
+  padding-bottom: 30px;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.instagram-feed .instagram_gallery:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.instagram-feed .instagram_gallery .instagram-feed-item {
+  -ms-flex: 0 025%;
+  -webkit-box-flex: 0;
+          flex: 0 0 25%;
+  max-width: 25%;
+  position: relative;
+  width: 25%;
+  display: block;
+  padding: 15px;
+}
+
+.instagram-feed .instagram_gallery .instagram-feed-item .instagram-feed-inner {
+  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.instagram-feed .instagram_gallery .instagram-feed-item img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.instagram-feed .instagram_gallery .instagram-feed-item .instagram-feed-description {
+  background-color: #fff;
+  padding: 15px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.instagram-feed .instagram_gallery .instagram-feed-item .instagram-feed-description p {
+  color: #aaa;
+  font-size: 0.775em;
+  display: block;
+  min-height: 60px;
+}
+
+.instagram-feed .instagram_gallery .instagram-feed-item .instagram-feed-description .instagram-button {
+  background-color: #FFCC04;
+  color: #000;
+  display: block;
+  padding: 10px 15px;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 3px;
+}
+
+.instagram-feed .instagram_gallery .instagram-feed-item .instagram-feed-description .instagram-button:hover {
   background-color: #ffdc51;
   text-decoration: none;
   cursor: pointer;

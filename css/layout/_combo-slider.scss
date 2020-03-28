@@ -11,8 +11,6 @@
         }
     }
     .combo-slider {
-        padding-left: 15px;
-        padding-right: 15px;
         padding-top: 15px;
         padding-bottom: 15px;
         .slick-arrow {
@@ -24,10 +22,10 @@
             @include bigButton(#000, $second-color);
         }
         .combo-prev {
-            left:30px;
+            left: 15px;
         }
         .combo-next {
-            right: 30px;
+            right: 15px;
         }
         img {
             max-width: 100%;
@@ -42,19 +40,13 @@
                 border-radius: 3px;
                 .combo-image {
                     img {
-                        border-top-left-radius: 3px;
-                        border-top-right-radius: 3px;
-                        border-bottom-right-radius: 0px;
-                        border-bottom-left-radius: 0px;
+                        @include borderRadius(3px,3px,0,0);
                     }
                 }
                 .combo-description {
                     padding: 15px;
                     background-color: #fefefe;
-                    border-top-left-radius: 0px;
-                    border-top-right-radius: 0px;
-                    border-bottom-right-radius: 3px;
-                    border-bottom-left-radius: 3px;
+                    @include borderRadius(0,0,3px,3px);
                     h4 {
                         font-size: 1rem;
                     }

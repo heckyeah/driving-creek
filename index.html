@@ -197,7 +197,23 @@
                 </div>
             </div>
             
-        </div>    
+        </div>
+        <div class="instagram-feed" >
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="instagram-title">
+                            <h2>Instagram</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="instagram-feed-1" id="instagram-feed-1"></div>
+                    </div>
+                </div>
+            </div>
+        </div>  
     </div>
     <footer class="footer edge--top--reverse">
         <div class="container">
@@ -274,8 +290,24 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
 
+    <script src="/js/instagramFeed.js"></script>
+
     <script type="text/javascript">
+
         $(document).ready(function(){
+            new InstagramFeed({
+                'username': 'corozip',
+                'container': document.getElementById("instagram-feed-1"),
+                'display_profile': false,
+                'display_biography': false,
+                'display_gallery': true,
+                'callback': null,
+                'styling': false,
+                'items': 8,
+                'items_per_row': 4,
+                'margin': 0 
+            });
+
             $('.main-banner').slick({
                 infinite: true,
                 speed: 1500,
@@ -286,6 +318,13 @@
             });
 
             $('.combo-slider').slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                nextArrow: '<div class="combo-next slider-next">Next</div>',
+                prevArrow: '<div class="combo-prev slider-prev">Previous</div>'
+            });
+
+            $('.instagram_gallery').slick({
                 slidesToShow: 4,
                 slidesToScroll: 1,
                 nextArrow: '<div class="combo-next slider-next">Next</div>',

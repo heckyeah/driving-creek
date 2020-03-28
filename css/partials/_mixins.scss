@@ -15,6 +15,13 @@
     }
 }
 
+@mixin borderRadius($tl, $tr, $br, $bl) {
+    border-top-left-radius: $tl;
+    border-top-right-radius: $tr;
+    border-bottom-right-radius: $br;
+    border-bottom-left-radius: $bl;
+}
+
 // mixin
 @mixin angle($pseudo, $flip: false, $angle: 2deg) {
     // Possible values for $pseudo are: before, after, both
