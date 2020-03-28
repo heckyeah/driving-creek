@@ -120,15 +120,86 @@
         </div>
     </div>
     <div class="content">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Hello</h1>
+        <div class="slider-container edge--top--reverse">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="slider-title">
+                            <h2>Combo's</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="combo-slider">
+                            <div class="combo-item combo-item-1">
+                                <div class="combo-info">
+                                    <div class="combo-image">
+                                        <img src="/img/banner-image-2.png" alt="Combo Title">
+                                    </div>
+                                    <div class="combo-description">
+                                        <h4>Combo Title</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quis sapiente sunt voluptatem sed accusamus est. Suscipit facere molestiae est eaque consequatur optio natus quis ex magnam rerum. Cupiditate, voluptatem.</p>
+                                        <a href="#" class="book-combo" target="_Blank">Book Deal</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="combo-item combo-item-2">
+                                <div class="combo-info">
+                                    <div class="combo-image">
+                                        <img src="/img/banner-image.png" alt="Combo Title">
+                                    </div>
+                                    <div class="combo-description">
+                                        <h4>Combo Title</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quis sapiente sunt voluptatem sed accusamus est. Suscipit facere molestiae est eaque consequatur optio natus quis ex magnam rerum. Cupiditate, voluptatem.</p>
+                                        <a href="#" class="book-combo" target="_Blank">Book Deal</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="combo-item combo-item-3">
+                                <div class="combo-info">
+                                    <div class="combo-image">
+                                        <img src="/img/banner-image-3.png" alt="Combo Title">
+                                    </div>
+                                    <div class="combo-description">
+                                        <h4>Combo Title</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quis sapiente sunt voluptatem sed accusamus est. Suscipit facere molestiae est eaque consequatur optio natus quis ex magnam rerum. Cupiditate, voluptatem.</p>
+                                        <a href="#" class="book-combo" target="_Blank">Book Deal</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="combo-item combo-item-4">
+                                <div class="combo-info">
+                                    <div class="combo-image">
+                                        <img src="/img/banner-image-2.png" alt="Combo Title">
+                                    </div>
+                                    <div class="combo-description">
+                                        <h4>Combo Title</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quis sapiente sunt voluptatem sed accusamus est. Suscipit facere molestiae est eaque consequatur optio natus quis ex magnam rerum. Cupiditate, voluptatem.</p>
+                                        <a href="#" class="book-combo" target="_Blank">Book Deal</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="combo-item combo-item-5">
+                                <div class="combo-info">
+                                    <div class="combo-image">
+                                        <img src="/img/banner-image.png" alt="Combo Title">
+                                    </div>
+                                    <div class="combo-description">
+                                        <h4>Combo Title</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quis sapiente sunt voluptatem sed accusamus est. Suscipit facere molestiae est eaque consequatur optio natus quis ex magnam rerum. Cupiditate, voluptatem.</p>
+                                        <a href="#" class="book-combo" target="_Blank">Book Deal</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+            
+        </div>    
     </div>
-    <footer class="footer">
+    <footer class="footer edge--top--reverse">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 footer-column footer-column-1">
@@ -212,6 +283,13 @@
                 cssEase: 'linear',
                 autoplay: true,
                 autoplaySpeed: 4000
+            });
+
+            $('.combo-slider').slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                nextArrow: '<div class="combo-next slider-next">Next</div>',
+                prevArrow: '<div class="combo-prev slider-prev">Previous</div>'
             });
         });
     </script>

@@ -1,6 +1,8 @@
 footer.footer {
     background-color: #111;
     padding-top: 60px;
+    position: relative;
+    z-index:3;
     a {
         &:link,
         &:active,
