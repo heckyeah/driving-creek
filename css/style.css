@@ -390,7 +390,7 @@
 
 .slider-container .slider-title {
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 .slider-container .slider-title h2 {
@@ -504,7 +504,7 @@
 
 .instagram-feed .instagram-title {
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 .instagram-feed .instagram-title h2 {
@@ -745,6 +745,192 @@
   .video-banner .fullscreen-bg__video {
     display: none;
   }
+}
+
+.price-board {
+  background-color: #eee;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.price-board .price-board-container {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.price-board .price-board-title {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.price-board .price-board-title h2 {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.price-board .board-item {
+  border: 5px solid #056a38;
+  background-color: #fefefe;
+  border-radius: 15px;
+  width: 200px;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.price-board .board-item .board-contents {
+  margin: auto;
+}
+
+.price-board .board-item .board-contents .item-price {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #056a38;
+  margin-bottom: -15px;
+}
+
+.price-board .board-item .board-contents .item-description .item-title {
+  font-weight: 600;
+}
+
+.price-board .board-item .board-contents .item-description .item-requirements {
+  font-size: 0.775rem;
+  color: #aaa;
+}
+
+.price-board .boards:last-child .board-item {
+  border: 5px solid #FFCC04;
+  background-color: #056a38;
+}
+
+.price-board .boards:last-child .board-item .item-price {
+  color: #FFCC04;
+}
+
+.price-board .boards:last-child .board-item .item-description .item-title {
+  color: #fefefe;
+}
+
+.price-board .boards:last-child .board-item .item-description .item-requirements {
+  color: #fefefe;
+}
+
+.price-board .price-board-requirements {
+  color: #aaa;
+  padding-top: 30px;
+}
+
+.price-board .price-board-requirements .important-time {
+  color: #056a38;
+  font-size: 1.125rem;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.price-board .list-requirements {
+  position: absolute;
+  top: -90px;
+  right: 0;
+  width: 200px;
+  border-radius: 5px;
+  background-color: #056a38;
+  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  padding: 15px;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.price-board .list-requirements:after, .price-board .list-requirements:before {
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.price-board .list-requirements:before {
+  border-color: rgba(5, 106, 56, 0);
+  border-top-color: #056a38;
+  border-width: 10px;
+  margin-left: -15px;
+}
+
+.price-board .list-requirements:hover {
+  display: block;
+}
+
+.price-board .list-requirements ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.price-board .list-requirements ul li {
+  margin-bottom: 5px;
+  border-radius: 3px;
+  color: #fff;
+  text-align: left;
+  font-size: 0.775rem;
+}
+
+.price-board .list-requirements ul li:last-child {
+  margin-bottom: 0;
+}
+
+.price-board .list-item {
+  color: #999;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+  display: inline-block;
+  font-size: 1.125rem;
+  font-weight: 600;
+  font-style: italic;
+  cursor: pointer;
+}
+
+.price-board .list-item:hover + .list-requirements {
+  display: block;
+  opacity: 1;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  z-index: 2;
+}
+
+.price-board .list-item:after {
+  content: " ";
+  display: table;
+  height: 2px;
+  width: 120%;
+  margin-left: -10%;
+  background-color: #999;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+
+.price-board .list-item:hover {
+  color: #056a38;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.price-board .list-item:hover:after {
+  background-color: #056a38;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+
+.staff-members {
+  background-color: #000;
 }
 
 footer.footer {

@@ -1,0 +1,157 @@
+.price-board {
+    background-color: #eee;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+    .price-board-container {
+        max-width: 720px;
+        margin: 0 auto;
+    }
+    .price-board-title {
+        text-align: center;
+        margin-bottom: 45px;
+        h2 {
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    }
+    .board-item {
+        border: 5px solid $zipline;
+        background-color: #fefefe;
+        border-radius: 15px;
+        width: 200px;
+        height: 200px;
+        display: flex;
+        margin: 0 auto;
+        -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        .board-contents {
+            margin: auto;
+            .item-price {
+                font-size: 4rem;
+                font-weight: 700;
+                color: $zipline;
+                margin-bottom: -15px;
+            }
+            .item-description {
+                .item-title {
+                    font-weight: 600;
+                }
+                .item-requirements {
+                    font-size: 0.775rem;
+                    color: #aaa;
+                }
+            }
+        }
+    }
+    .boards:last-child {
+        .board-item {
+            border: 5px solid $second-color;
+            background-color: $zipline;
+            .item-price {
+                color: $second-color;
+                
+            }
+            .item-description {
+                .item-title {
+                    color: #fefefe;
+                }
+                .item-requirements {
+                    color: #fefefe;
+                }
+            }
+        }
+    }
+    .price-board-requirements {
+        color: #aaa;
+        padding-top: 30px;
+        .important-time {
+            color: $zipline;
+            font-size: 1.125rem;
+            font-weight: 600;
+            font-style: italic;
+        }
+    }
+    .list-requirements  {
+        position: absolute;
+        top: -90px;
+        right: 0;
+        width: 200px;
+        border-radius: 5px;
+        background-color: $zipline;
+        -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        padding: 15px;
+        // z-index: -100;
+        // display: none;
+        opacity: 0;
+        transition: opacity 0.5s;
+        &:after,
+        &:before {
+            top: 100%;
+            left: 50%;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+        }
+        &:before {
+            border-color: rgba(5, 106, 56, 0);
+            border-top-color: $zipline;
+            border-width: 10px;
+            margin-left: -15px;
+        }
+        &:hover {
+            display: block;
+        }
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            li {
+                margin-bottom: 5px;
+                border-radius: 3px;
+                color: #fff;
+                text-align: left;
+                font-size: 0.775rem;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .list-item {
+        color: #999;
+        transition: color 0.2s;
+        display: inline-block;
+        font-size: 1.125rem;
+        font-weight: 600;
+        font-style: italic;
+        cursor: pointer;
+        &:hover + .list-requirements {
+            display: block;
+            opacity: 1;
+            transition: opacity 0.5s;
+            z-index: 2;
+        }
+        &:after {
+            content: " ";
+            display: table;
+            height: 2px;
+            width: 120%;
+            margin-left: -10%;
+            background-color: #999;
+            transition: background-color 0.2s;
+        }
+        &:hover {
+            color: $zipline;
+            transition: color 0.2s;
+            &:after {
+                background-color: $zipline;
+                transition: background-color 0.2s;
+            }
+        }
+    }
+}
