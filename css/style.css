@@ -976,6 +976,19 @@
   background-size: 100% auto;
 }
 
+.article {
+  background-color: #eee;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.article .article-container {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: left;
+}
+
 footer.footer {
   background-color: #111;
   padding-top: 60px;
