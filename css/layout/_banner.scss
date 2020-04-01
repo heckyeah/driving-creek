@@ -1,5 +1,4 @@
 .banner {
-    background-color: #000;
     .banner-item {
         position: relative;
         height: 700px;
@@ -47,6 +46,7 @@
 }
 
 .main-banner.slick-slider {
+    background-color: #111;
     .slick-arrow {
         display: block;
         height: 100%;

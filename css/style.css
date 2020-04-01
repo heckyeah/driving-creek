@@ -277,10 +277,6 @@
   float: none;
 }
 
-.banner {
-  background-color: #000;
-}
-
 .banner .banner-item {
   position: relative;
   height: 700px;
@@ -344,6 +340,10 @@
   background-color: #ffdc51;
   text-decoration: none;
   cursor: pointer;
+}
+
+.main-banner.slick-slider {
+  background-color: #111;
 }
 
 .main-banner.slick-slider .slick-arrow {
